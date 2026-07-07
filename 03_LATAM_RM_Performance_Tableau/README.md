@@ -11,25 +11,7 @@
 
 This Tableau dashboard analyzes LATAM relationship manager performance across yearly sales, sales goals, bonus outcomes, profit ratio, and profits versus discounts.
 
-The dashboard helps sales leaders compare RM performance, evaluate goal attainment, identify bonus outcomes, review profit ratio by category and subcategory, and understand whether discounting is affecting profitability.
-
 > **Data Note:** This project uses sample data for portfolio demonstration purposes only. It does not contain private business data, client data, or real personal data.
-
----
-
-## Project Preview
-
-### LATAM RM Performance Overview
-
-<img src="images/latam_rm_performance_overview.png" width="900">
-
-### LATAM RM Performance Filtered to Technology
-
-<img src="images/latam_rm_performance_technology.png" width="900">
-
-### LATAM RM Performance Full Dashboard View
-
-<img src="images/latam_rm_performance_full_dashboard.png" width="900">
 
 ---
 
@@ -49,78 +31,43 @@ This dashboard answers:
 
 ---
 
-## Dashboard Analysis
+## Project Preview and Analysis
 
-### 1. Yearly sales trend
+### LATAM RM Performance Overview
 
-The yearly sales chart compares sales performance by RM from 2017 through 2020.
+<img src="images/latam_rm_performance_overview.png" width="900">
 
-The overall view shows that Chuck Magee, Jack Lebron, and Anna Andreadi all reached similar sales levels by 2020, while Giulietta Dortch remained lower than the other RMs.
+This overview shows the full LATAM RM performance dashboard with all categories and segments selected. It compares relationship managers across yearly sales, 2020 bonus results, sales goal
+cat >> 03_LATAM_RM_Performance_Tableau/README.md <<'EOF'
+attainment, RM profit ratio, sales goal status, and profits versus discounts.
 
-Chuck Magee shows strong growth over time, increasing from under $100K in 2017 to more than $200K in 2020. Jack Lebron also shows strong growth and reaches nearly $200K by 2020.
+Chuck Magee and Jack Lebron both exceeded their 2020 sales goals and earned bonuses. Chuck had the highest 2020 sales at **$211,618**, while Jack had **$195,480** in 2020 sales. Anna Andreadi had strong sales at **$194,043**, but missed her goal because her target was higher. Giulietta Dortch had the lowest 2020 sales at **$105,492** and also missed goal.
 
-This trend view helps leadership see both year end results and sales trajectory.
-
----
-
-### 2. 2020 sales goal and bonus performance
-
-The 2020 RM Bonus table shows that Chuck Magee and Jack Lebron exceeded their sales goals and earned bonuses.
-
-| RM | 2020 Sales | 2020 Sales Goal | Delta | 2020 Bonus |
-|---|---:|---:|---:|---:|
-| Chuck Magee | $211,618 | $197,918 | 6.9% | $21,162 |
-| Jack Lebron | $195,480 | $181,015 | 8.0% | $19,548 |
-| Giulietta Dortch | $105,492 | $111,262 | -5.2% | $0 |
-| Anna Andreadi | $194,043 | $203,086 | -4.5% | $0 |
-
-The sales goal chart confirms that Chuck and Jack met their goals, while Anna and Giulietta missed theirs.
-
-A key business insight is that Anna had sales close to Jack, but missed goal because her target was higher. This shows why sales goal context matters when evaluating performance.
+The dashboard shows that sales performance and goal performance are not the same thing. Anna had sales close to Jack, but Jack exceeded goal while Anna missed goal. This makes goal context important for fair performance review.
 
 ---
 
-### 3. Profit ratio by RM and subcategory
+### LATAM RM Performance Filtered to Technology
 
-The 2020 RM Profit Ratio heatmap shows profitability by RM, category, and subcategory.
+<img src="images/latam_rm_performance_technology.png" width="900">
 
-In the full view, Jack Lebron has the strongest grand total profit ratio at 16.0%, followed by Giulietta Dortch at 11.9%, Anna Andreadi at 8.6%, and Chuck Magee at 6.0%.
+This view filters the dashboard to the Technology category. Chuck Magee leads Technology sales with **$79,074** in 2020 sales against a **$59,393** goal, beating goal by **33.1%** and earning a **$7,907** bonus.
 
-| RM | Grand Total Profit Ratio |
-|---|---:|
-| Jack Lebron | 16.0% |
-| Giulietta Dortch | 11.9% |
-| Anna Andreadi | 8.6% |
-| Chuck Magee | 6.0% |
+Jack Lebron had **$70,254** in Technology sales but missed his Technology goal by **2.6%**. Anna Andreadi had **$65,002** in Technology sales and missed goal by **13.5%**. Giulietta Dortch had **$36,452** in Technology sales and missed goal by **9.8%**.
 
-This creates an important performance tradeoff. Chuck had the highest 2020 sales and earned the largest bonus, but Jack had the strongest overall profit ratio. Leadership may want to evaluate both sales volume and profitability, not just sales goal attainment.
+This filtered view shows why category level analysis matters. Chuck was the clear Technology sales leader, but Jack still showed the strongest Technology profit ratio at **22.6%**. Chuck drove more volume, while Jack produced stronger profitability.
 
 ---
 
-### 4. Technology category analysis
+### LATAM RM Performance Full Dashboard View
 
-When filtered to Technology, Chuck Magee leads 2020 Technology sales with $79,074 against a goal of $59,393, exceeding goal by 33.1% and earning a $7,907 bonus.
+<img src="images/latam_rm_performance_full_dashboard.png" width="900">
 
-| RM | Technology 2020 Sales | Technology Goal | Delta | Bonus |
-|---|---:|---:|---:|---:|
-| Chuck Magee | $79,074 | $59,393 | 33.1% | $7,907 |
-| Jack Lebron | $70,254 | $72,151 | -2.6% | $0 |
-| Giulietta Dortch | $36,452 | $40,423 | -9.8% | $0 |
-| Anna Andreadi | $65,002 | $75,130 | -13.5% | $0 |
+This full dashboard view shows how several performance metrics work together. The sales trend shows growth over time by RM. The profit ratio heatmap compares profitability by RM and subcategory. The bonus table shows sales, goals, percent delta, and bonus amounts. The scatter plot compares profit against discount levels.
 
-The Technology profit ratio heatmap shows Jack Lebron with the strongest Technology profit ratio at 22.6%, while Chuck Magee has 8.0%.
+One key insight is that Chuck Magee had the highest 2020 sales and largest bonus, but Jack Lebron had the strongest overall profit ratio at **16.0%**. This means sales leadership should not evaluate performance only by revenue or bonus. Profitability should also be part of the performance conversation.
 
-This suggests Chuck drove the most Technology sales, but Jack achieved better profitability.
-
----
-
-### 5. Profits versus discounts
-
-The profits versus discounts scatter plot shows the relationship between discount percentage and profit.
-
-Many marks at higher discounts appear near or below zero profit. This suggests that heavier discounting may be reducing profitability, especially at discount levels around 40% to 70%.
-
-This is important because an RM can still generate strong sales while discounting too heavily and weakening margin.
+The profits versus discounts scatter plot shows that higher discounts often appear close to or below zero profit. This suggests discounting may be reducing margin and should be monitored alongside sales goals.
 
 ---
 
@@ -132,7 +79,7 @@ This is important because an RM can still generate strong sales while discountin
 | Jack Lebron had the strongest overall profit ratio at 16.0% | Strong margin performance despite slightly lower sales than Chuck |
 | Anna Andreadi had high sales but missed goal | Goal context matters when evaluating performance |
 | Giulietta Dortch had the lowest 2020 sales and missed goal | May need sales coaching or pipeline review |
-| Technology sales were strongest for Chuck | Chuck performed especially well in Technology volume |
+| Chuck led Technology sales by a wide margin | Strong category level performance in Technology |
 | Jack had the strongest Technology profit ratio | Jack may be selling with stronger pricing or margin discipline |
 | Higher discounts appear connected to weaker profit outcomes | Discounting strategy should be reviewed |
 
@@ -183,7 +130,7 @@ This project demonstrates:
 
 * Tableau dashboard design
 * Sales performance analysis
-* RM performance reporting
+* Relationship manager performance reporting
 * Goal attainment tracking
 * Bonus analysis
 * Profit ratio analysis

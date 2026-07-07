@@ -10,25 +10,7 @@
 
 This Tableau project analyzes sales, profit, monthly trends, and category performance by order priority.
 
-The dashboard allows users to filter by order priority and year to understand how Critical, High, Medium, and Low priority orders contribute to sales performance over time.
-
 > **Data Note:** This project uses sample data for portfolio demonstration purposes. It does not contain private client data or real customer personal data.
-
----
-
-## Project Preview
-
-### All Order Priorities
-
-<img src="images/order_priority_all.png" width="900">
-
-### Low Priority Orders in 2020
-
-<img src="images/order_priority_low_2020.png" width="900">
-
-### High Priority Orders in 2020
-
-<img src="images/order_priority_high_2020.png" width="900">
 
 ---
 
@@ -47,31 +29,27 @@ This dashboard answers:
 
 ---
 
-## Dashboard Analysis
+## Project Preview and Analysis
 
-### 1. Overall priority performance
+### All Order Priorities
 
-The all priority view shows that Medium and High priority orders make up the largest share of sales activity, while Critical and Low priority orders appear much smaller by comparison.
+<img src="images/order_priority_all.png" width="900">
 
-The category bar chart shows that Technology has the highest total sales among the displayed categories, followed by Furniture and Office Supplies. This suggests that order priority analysis should not only look at volume, but also the category mix behind that volume.
+This view shows the full order priority dashboard across all priorities and all years. Medium and High priority orders appear to drive the largest share of sales activity, while Critical and Low priority orders are much smaller by comparison.
 
----
+The category bar chart shows Technology as the strongest category overall, followed by Furniture and Office Supplies. The monthly sales trend shows that sales generally increase over time, with stronger performance toward the later years.
 
-### 2. Sales and profit per order
-
-The scatter plot shows the relationship between sales and profit per order. Most orders cluster near lower sales values, but there are several higher sales outliers.
-
-The chart shows that larger orders can generate higher profit, but some orders produce negative profit even when sales are meaningful. This indicates that order value alone is not enough to judge performance. Profitability still needs to be reviewed at the order level.
+The scatter plot shows many orders clustered around lower sales values, but it also shows several outliers. Some orders generate high sales and profit, while others show negative profit. This reinforces that order priority analysis should include both sales volume and profitability.
 
 ---
 
-### 3. Low priority orders in 2020
+### Low Priority Orders in 2020
 
-When filtered to Low priority orders in 2020, the dashboard shows a smaller sales range compared to High priority orders.
+<img src="images/order_priority_low_2020.png" width="900">
 
-The monthly trend shows Low priority sales fluctuating during the year, with a visible dip around July and stronger activity later in the year.
+This filtered view focuses on Low priority orders in 2020. The overall sales volume is much smaller than the High priority view, but Low priority orders still contribute across all three major categories.
 
-Approximate category sales in the filtered Low priority view show:
+Approximate category sales in this view are:
 
 | Category | Approximate Sales |
 |---|---:|
@@ -79,17 +57,17 @@ Approximate category sales in the filtered Low priority view show:
 | Furniture | About $65K |
 | Technology | About $62K |
 
-This suggests that Low priority orders are still spread across all major categories and should not be ignored, even though total volume is lower than High priority orders.
+The monthly trend shows sales fluctuating through the year, with a dip around July and stronger activity later in the year. This suggests that Low priority orders may be less predictable but still contribute meaningful category sales.
 
 ---
 
-### 4. High priority orders in 2020
+### High Priority Orders in 2020
 
-When filtered to High priority orders in 2020, sales are much higher than Low priority orders.
+<img src="images/order_priority_high_2020.png" width="900">
 
-The category view shows Technology as the strongest category, followed by Furniture and Office Supplies.
+This filtered view focuses on High priority orders in 2020. Sales are much higher than the Low priority view, especially across Technology and Furniture.
 
-Approximate category sales in the filtered High priority view show:
+Approximate category sales in this view are:
 
 | Category | Approximate Sales |
 |---|---:|
@@ -97,7 +75,9 @@ Approximate category sales in the filtered High priority view show:
 | Furniture | About $455K |
 | Office Supplies | About $380K |
 
-The monthly sales line shows an upward pattern through the second half of 2020, with November reaching about $156K. This suggests that High priority orders became especially important later in the year.
+The monthly sales line shows stronger growth in the second half of 2020, with November reaching about **$156K**. This suggests that High priority orders became especially important later in the year.
+
+This view shows that high priority orders require close operational attention because they represent much larger sales volume and may drive fulfillment pressure.
 
 ---
 
@@ -106,11 +86,11 @@ The monthly sales line shows an upward pattern through the second half of 2020, 
 | Insight | Business Meaning |
 |---|---|
 | Medium and High priority orders dominate total sales | These groups likely require the most operational focus |
-| High priority orders in 2020 produced much higher category sales than Low priority orders | Priority level is strongly tied to sales volume |
-| Technology appears to be the strongest category for High priority sales | Technology orders may require stronger fulfillment planning |
-| Low priority orders still contribute across Furniture, Office Supplies, and Technology | Lower priority orders still matter for total category performance |
+| High priority orders produce much higher sales than Low priority orders | Priority level is strongly tied to sales volume |
+| Technology leads High priority sales | Technology orders may require stronger fulfillment planning |
+| Low priority orders still contribute across major categories | Lower priority orders still matter for total category performance |
 | Some orders show negative profit | Pricing, discounts, or fulfillment costs may need review |
-| November 2020 was a strong month for High priority sales | Seasonal or operational demand patterns may exist |
+| November 2020 was strong for High priority sales | Seasonal or operational demand patterns may exist |
 
 ---
 
@@ -149,8 +129,6 @@ The monthly sales line shows an upward pattern through the second half of 2020, 
 ![Trend Analysis](https://img.shields.io/badge/Trend_Analysis-6A0DAD?style=for-the-badge)
 ![Filtering](https://img.shields.io/badge/Filtering-008080?style=for-the-badge)
 ![Data Storytelling](https://img.shields.io/badge/Data_Storytelling-8A2BE2?style=for-the-badge)
-
-This project demonstrates:
 
 * Tableau dashboard design
 * Order priority analysis

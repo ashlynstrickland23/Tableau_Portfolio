@@ -11,25 +11,7 @@
 
 This Tableau project analyzes sales performance, profitability, discounts, customer profitability, subcategory performance, and geographic sales trends using Tableau Superstore sample data.
 
-The dashboard was designed to help business users identify where sales are strong, where profit is weak, which customers are most valuable, and where discounting may be affecting profitability.
-
 > **Data Note:** This project uses Tableau Superstore sample data for portfolio demonstration purposes. It does not contain private client data or real customer personal data.
-
----
-
-## Project Preview
-
-### Profits by Location Dashboard
-
-<img src="images/profits_by_location.png" width="900">
-
-### Key Metric Trends Dashboard
-
-<img src="images/key_metric_trends.png" width="900">
-
-### Sales vs Profit Analysis
-
-<img src="images/sales_vs_profit.png" width="900">
 
 ---
 
@@ -48,79 +30,43 @@ This dashboard answers:
 
 ---
 
-## Dashboard Analysis
+## Project Preview and Analysis
 
-### 1. Geographic profitability
+### Profits by Location Dashboard
 
-The location dashboard shows that profit is not evenly distributed across the United States. Large profitable markets appear in states such as California and New York, while other states show weaker or negative profit performance.
+<img src="images/profits_by_location.png" width="900">
 
-The map makes it easy to identify where the business is generating strong returns and where leadership may need to review pricing, discounts, or product mix.
+This dashboard combines geographic profit performance, sales versus profit, and customer profitability in one executive view. The map shows that profit is not evenly distributed across the United States. Larger profitable markets appear in states such as California and New York, while other states show weaker or negative profit performance.
 
-A key insight from the New York tooltip is that New York generated:
+The New York tooltip shows strong performance with **$74,039 in profit**, **$310,876 in sales**, and a **23.82% profit ratio**. This indicates that New York is not only generating high sales, but also converting sales into strong profit.
 
-| Metric | Value |
-|---|---:|
-| Profit | $74,039 |
-| Sales | $310,876 |
-| Profit Ratio | 23.82% |
+The scatter plot shows that higher sales do not always guarantee higher profit. Some points with meaningful sales still sit close to or below the zero profit line, suggesting that discounting, product mix, or cost structure may be reducing margin.
 
-This shows that New York is not only generating high sales, but also converting those sales into strong profit.
+The customer profitability table highlights the most profitable customers, including Tamara Chand, Raymond Buch, Sanjit Chand, Hunter Lopez, and Adrian Barton. This helps sales teams prioritize accounts that are producing meaningful profit, not just revenue.
 
 ---
 
-### 2. Sales versus profit relationship
+### Key Metric Trends Dashboard
 
-The sales versus profit scatter plot compares sales and profit across states, categories, and segments.
+<img src="images/key_metric_trends.png" width="900">
 
-Most marks cluster near the lower sales and lower profit area, which means many locations or segments produce smaller order volume. A few outliers have much higher sales and profit, which may represent high value states, categories, or customer groups.
+This dashboard shows overall business performance across key metrics. The dashboard shows **$2.3M in total sales**, **$286.4K in total profit**, **15.62% average discount**, **20.00% median discount**, and a **12.47% profit ratio**.
 
-The scatter plot also shows that higher sales do not always guarantee higher profit. Some marks with strong sales still fall near or below the zero profit line, which suggests that discounting, product mix, or cost structure may be reducing margin.
+The sales trend shows growth over time, especially toward the later quarters. Profit also fluctuates by category, with Technology and Office Supplies appearing stronger than Furniture in several periods.
 
----
-
-### 3. Customer profitability
-
-The customer profitability view ranks customers by profit and sales. This makes it easy to identify the customers that are most valuable to the business.
-
-Top customers shown in the dashboard include:
-
-| Customer | Profit | Sales |
-|---|---:|---:|
-| Tamara Chand | $8,981 | $19,052 |
-| Raymond Buch | $6,976 | $15,117 |
-| Sanjit Chand | $5,757 | $14,142 |
-| Hunter Lopez | $5,622 | $12,873 |
-| Adrian Barton | $5,445 | $14,474 |
-
-This view helps sales teams prioritize high value customers and understand which accounts are driving meaningful profit, not just revenue.
+The discount and profit ratio trends are important because they show that sales growth alone is not enough. A business also needs to monitor margin quality, discounting behavior, and category level profitability.
 
 ---
 
-### 4. Key metric trends
+### Sales vs Profit Analysis
 
-The key metric trends dashboard shows overall performance across sales, profit, average discount, median discount, and profit ratio.
+<img src="images/sales_vs_profit.png" width="900">
 
-The dashboard shows:
+This scatter plot compares sales and profit across category, segment, and state. Most points are clustered near the lower sales and lower profit area, which means many states or segments produce smaller order volume.
 
-| Metric | Value |
-|---|---:|
-| Total Sales | $2.3M |
-| Total Profit | $286.4K |
-| Average Discount | 15.62% |
-| Median Discount | 20.00% |
-| Profit Ratio | 12.47% |
+A few outliers have much higher sales and profit, which may represent high value states, product categories, or customer segments. However, some high sales points still show weak or negative profit, showing that sales volume does not always equal strong profitability.
 
-The trend charts show that sales increased over time, especially toward the end of the period. Profit also fluctuates by category, with Technology and Office Supplies appearing stronger than Furniture in several periods.
-
-The profit ratio chart helps show that revenue growth alone is not enough. The business also needs to monitor margin quality and discount behavior.
-
----
-
-### 5. Subcategory profitability
-
-The subcategory profitability view highlights where product level performance differs. Some subcategories contribute positively to profit, while others show negative profit.
-
-This is important because a business may see strong category sales overall but still have specific subcategories that are reducing margin. These areas may need pricing review, discount review, or product strategy changes.
+This view is useful because it helps business users quickly identify outliers, profitable opportunities, and areas where margin may need review.
 
 ---
 
@@ -128,11 +74,11 @@ This is important because a business may see strong category sales overall but s
 
 | Insight | Business Meaning |
 |---|---|
-| New York shows strong profit and a high profit ratio | This state appears to be a high value market |
-| Sales and profit are positively related but not perfectly aligned | Higher revenue does not always mean stronger profitability |
-| Several customers generate large profit contributions | Customer level ranking can support account prioritization |
+| New York shows strong sales, profit, and profit ratio | This state appears to be a high value market |
 | Total sales reached $2.3M and total profit reached $286.4K | The business has strong revenue volume but should monitor margin quality |
-| Median discount is 20.00% | Discounting is a meaningful part of the sales strategy |
+| Median discount is 20.00% | Discounting is a major part of the sales strategy |
+| Some high sales points have weak or negative profit | Revenue should be reviewed alongside margin |
+| Top customers generate meaningful profit | Customer level ranking can support account prioritization |
 | Some subcategories appear unprofitable | Product level margin review may be needed |
 
 ---
@@ -161,8 +107,6 @@ This is important because a business may see strong category sales overall but s
 ![KPI Cards](https://img.shields.io/badge/KPI_Cards-DC143C?style=for-the-badge)
 ![Customer Profitability](https://img.shields.io/badge/Customer_Profitability-FF8C00?style=for-the-badge)
 ![Trend Analysis](https://img.shields.io/badge/Trend_Analysis-008080?style=for-the-badge)
-
-This project demonstrates:
 
 * Tableau dashboard design
 * Geographic sales and profit analysis
