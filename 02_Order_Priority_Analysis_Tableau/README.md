@@ -13,8 +13,6 @@ This Tableau project analyzes sales, profit, and monthly trends by order priorit
 
 > **Data Note:** This project uses sample data for portfolio demonstration purposes. It does not contain private client data or real customer personal data.
 
-> **Workbook Note:** The Tableau workbook file is not included for this project. This portfolio entry documents the dashboard using exported screenshots only.
-
 ---
 
 ## Project Preview
