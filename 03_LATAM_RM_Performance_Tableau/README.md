@@ -11,8 +11,6 @@
 
 This Tableau dashboard analyzes LATAM relationship manager performance across yearly sales, sales goals, bonus outcomes, profit ratio, and profits versus discounts.
 
-> **Data Note:** This project uses sample data for portfolio demonstration purposes only. It does not contain private business data, client data, or real personal data.
-
 ---
 
 ## Business Problem
