@@ -11,8 +11,6 @@
 
 This Tableau project analyzes sales performance, profitability, discounts, customer profitability, subcategory performance, and geographic sales trends using Tableau Superstore sample data.
 
-> **Data Note:** This project uses Tableau Superstore sample data for portfolio demonstration purposes. It does not contain private client data or real customer personal data.
-
 ---
 
 ## Business Problem
