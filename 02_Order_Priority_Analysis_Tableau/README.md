@@ -10,8 +10,6 @@
 
 This Tableau project analyzes sales, profit, monthly trends, and category performance by order priority.
 
-> **Data Note:** This project uses sample data for portfolio demonstration purposes. It does not contain private client data or real customer personal data.
-
 ---
 
 ## Business Problem
